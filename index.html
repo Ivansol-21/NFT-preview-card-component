@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./src/images/favicon-32x32.png"
+    />
+
+    <title>NFT preview card component</title>
+  </head>
+  <body>
+    <template id="template__card">
+      <article class="card">
+        <header>
+          <img class="header__img" src="" alt="" />
+        </header>
+        <section class="sct-1">
+          <h3 class="card__title"></h3>
+          <p class="card__detalle"></p>
+        </section>
+        <section class="sct-2">
+          <figure>
+            <img class="icon-ethereum" src="" alt="" />
+            <figcaption class="card__precio"></figcaption>
+          </figure>
+          <figure>
+            <img class="icon-clock" src="" alt="" />
+            <time class="card__fecha" datetime=""></time>
+          </figure>
+        </section>
+        <hr />
+        <footer>
+          <img class="avatar" src="" alt="" />
+          <p class="autor">
+            <strong class="nombre"></strong>
+          </p>
+        </footer>
+      </article>
+    </template>
+    <main id="root"></main>
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>
