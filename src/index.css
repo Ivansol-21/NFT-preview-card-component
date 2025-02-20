@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+/* Componentes individuales */
+@import url('./components/PreviewNFT/PreviewNFT.css');
+
+:root {
+    /* Colors Primary */
+
+    --Soft-blue: rgb(139, 172, 218);
+    --Soft-blue-modal: rgba(139, 172, 218, 0.1);
+    --Cyan: rgb(0, 255, 247);
+    --Cyan-modal: rgba(0, 255, 247, 0.5);
+
+    /* Colors Neutrals */
+
+    --Very-dark-blue-main-BG: rgb(13, 25, 43);
+    --Very-dark-blue-card-BG: rgb(20, 37, 61);
+    --Very-dark-blue-line: rgb(47, 65, 91);
+    --White: rgb(255, 255, 255);
+
+    /* Tipografia */
+    --font-size: 18px;
+    --font-family: 'Outfit';
+
+    --Weights-light: 300;
+    --Weights-Semi-Bold: 600;
+}
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    font: inherit;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+#root {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: var(--font-size);
+    font-family: var(--font-family);
+    background-color: var(--Very-dark-blue-main-BG);
+    min-block-size: 100vh;
+}
+hr {
+    border-style: inset;
+    border-width: 1px;
+    border-color: var(--Soft-blue-modal);
+}

@@ -1,4 +1,4 @@
-import { PreviewNFT } from "./components/PreviewNFT.js";
+import { PreviewNFT } from "./components/PreviewNFT/PreviewNFT.js";
 
 document.addEventListener('DOMContentLoaded', () => {
     // Se obtiene el elemento principal
