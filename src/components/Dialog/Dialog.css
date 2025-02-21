@@ -1,0 +1,52 @@
+.dialog {
+    inline-size: 60%;
+    block-size: 100%;
+    inset-inline-start: 50%;
+    inset-block-start: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0);
+    overflow: hidden;
+}
+.dialog::backdrop {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+.dialog img {
+    inline-size: 100%;
+    block-size: 100%;
+}
+.dialog__btn {
+    position: absolute;
+    font-size: small;
+    background-color: rgba(255, 0, 0, 0.5);
+    border-radius: 50%;
+    inset-inline-end: 2%;
+    inset-block-start: 2%;
+    padding: 9px 12px 12px 12px;
+    text-align: center;
+    color: var(--Cyan-modal);
+    font-weight: var(--Weights-light);
+}
+.dialog__btn:hover {
+    background-color: red;
+    color: black;
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.5);
+    cursor: pointer;
+}
+@media screen and (max-width: 767px) {
+    .dialog {
+        inline-size: 80%;
+        block-size: 100%;
+    }    
+}
+@media screen and (max-width: 425px) {
+    .dialog {
+        inline-size: 100%;
+        block-size: 100%;
+    }    
+}
+@media screen and (max-width: 375px) {
+    .dialog {
+        inline-size: 100%;
+        block-size: 80%;
+    }    
+}

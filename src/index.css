@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
 
 /* Componentes individuales */
+@import url('./components/Dialog/Dialog.css');
 @import url('./components/PreviewNFT/PreviewNFT.css');
 
 :root {
@@ -44,6 +45,7 @@
     font-family: var(--font-family);
     background-color: var(--Very-dark-blue-main-BG);
     min-block-size: 100vh;
+    padding: 1rem;
 }
 hr {
     border-style: inset;

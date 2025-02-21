@@ -1,5 +1,9 @@
+
 export const PreviewNFT = ($template) => {
-    const $clone = document.importNode($template, true); // Se clona el template recibido.
+    const $clone = document.importNode($template, true), // Se clona el template recibido.
+        $header = $clone.querySelector('article > header');
+
+    $header.classList.add('muestra'); // identificador para el click
 
     // Se trabaja sobre la instancia creada (clon), accediendo a los elementos dentro de la instancia para modificar su contenido.
     $clone.querySelector('article > header > img').setAttribute('src', './src/images/image-equilibrium.jpg');
@@ -41,6 +45,13 @@ export const PreviewNFT = ($template) => {
     
     $clone.querySelector('article > footer > img + p > strong').textContent = 'Jules Wyvern';
     $clone.querySelector('article > footer > img + p > strong').classList.add('nombre'); // Agrega clase css.
+
+    // Manejador de eventos
+    $header.addEventListener('click', event => {
+        if (event.target.matches('.muestra')) {
+            document.querySelector('.dialog').showModal();
+        }
+    })
     
     // Se retorna el template clonado y modificado.
     return $clone // Ahora el componente final es una instancia de ese template.
